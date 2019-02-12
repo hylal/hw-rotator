@@ -1,0 +1,42 @@
+<php?
+//Bismillahirrahmaanirrahim
+
+<html>
+	<div id="product_name">Kacamata</div>
+	<div id="product_group">Fashion</div>
+	<div id="product_id">10</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script language="JavaScript">
+		var product_id = $('#product_id').text()
+		var product_name = $('#product_name').text()
+		var product_group = $('#product_group').text()
+		var phone = ['6281312020954','6281312020941','6281312020938']
+		var i = parseInt(Math.random() * 3)
+		var button = ('<a id="addToCartButton" href="https://api.whatsapp.com/send?phone='+phone[i]+'&text=Halo%20Supply,%20tertarik%20dengan%20'+product_name+'" class="action_button randombutton" onclick="window.confirmOptIn()">Beli Melalui WhatsApp</a>');
+		document.write(button);
+		$('#addToCartButton').click(function(){
+			fbq('track', 'AddToCart', {
+				content_name: product_name,
+				content_ids: product_id,
+				content_type: product_group,
+				currency: 'IDR', 
+			});
+		})
+		$('#addToCartButton2').click(function(){
+			fbq('track', 'AddToCart', {
+				content_name: product_name,
+				content_ids: product_id,
+				content_type: product_group,
+				currency: 'IDR', 
+			});
+		})
+		$('#addToCartButton3').click(function(){
+			fbq('track', 'AddToCart', {
+				content_name: product_name,
+				content_ids: product_id,
+				content_type: product_group,
+				currency: 'IDR', 
+			});
+		})
+	</script>
+</html>
