@@ -22,3 +22,8 @@ HW Rotator is a woocommerce plugin that is able to display whatsapp buttons rand
 = 1.0.0 =
 * Support Custom css for WC buy button
 * Available for 2 Whatsapp number
+
+Help me to develope this plugin
+
+Find me @
+https://www.wahid.biz
