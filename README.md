@@ -18,6 +18,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
 
 HW Rotator is a woocommerce plugin that is able to display whatsapp buttons randomly
+
 = 1.0.0 =
 * Support Custom css for WC buy button
 * Available for 2 Whatsapp number
