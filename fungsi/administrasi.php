@@ -22,10 +22,6 @@ if (count($_POST) > 0) {
        exit;
 
     }
-    if (isset($_POST['hw_rotator_name_rotate']) && is_null($errorMessage)) {
-        $hwRotatorObject->setOption('hw_rotator_name_rotate', sanitize_text_field($_POST['hw_rotator_name_rotate']));
-        $success = true;
-    }
     if (isset($_POST['hw_rotator_no_hp']) && is_null($errorMessage)) {
         if (!ctype_digit($_POST['hw_rotator_no_hp'])) {
             $errorMessage = 'WhatsApp Number must be numeric.';
@@ -107,11 +103,6 @@ if (count($_POST) > 0) {
         <?php if ($active_tab == 'general') { ?>
         <!-- General form menu -->
         <table class="form-table">
-          <tr valign="top">
-          <th scope="row">Nama URL Rotator</th>
-          <td><input style="width: 500px;" type="text" name="hw_rotator_name_rotate" value="<?php echo esc_attr($hwRotatorObject->getOption('hw_rotator_name_rotate')); ?>" /></td>
-          </tr>
-
             <tr valign="top">
             <th scope="row">Nomor CS OB Fit ke 01</th>
             <td>
@@ -142,7 +133,7 @@ if (count($_POST) > 0) {
                     <li>You can use <strong>{{title}}</strong> to insert Product Name.</li>
                     <li>You can use <strong>{{link}}</strong> to insert Product URL.</li>
                 </ul>
-                Example: <em><?php echo esc_attr($hwRotatorObject->default['content']); ?></em> will be parsed to <strong>Hello, I want to buy this product https://example.com/store/product/cool-thsirt</strong>
+                Example: <em><?php echo esc_attr($hwRotatorObject->default['content']); ?></em> will be parsed to <strong>Hello, I want to buy this product https://yourstore.com/produk/link-produk</strong>
             </td>
             </tr>
 

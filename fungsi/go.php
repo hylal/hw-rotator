@@ -8,7 +8,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 if (wp_is_mobile() || $hwRotatorObject->getOption('hw_rotator_button_show_desktop', 'yes') == 'yes') {
 	global $product;
 
-	$namerotate = esc_attr($hwRotatorObject->getOption('hw_rotator_name_rotate'));
 	$noHp = esc_attr($hwRotatorObject->getOption('hw_rotator_no_hp'));
 	$noHp2 = esc_attr($hwRotatorObject->getOption('hw_rotator_no_hp2'));
 	$content = esc_attr($hwRotatorObject->getOption('hw_rotator_content'));
@@ -21,12 +20,11 @@ if (wp_is_mobile() || $hwRotatorObject->getOption('hw_rotator_button_show_deskto
 		function openWA(){
 			var noHp = ["<?php echo esc_attr($noHp); ?>","<?php echo esc_attr($noHp2); ?>"],
 				content = "<?php echo esc_attr($hwRotatorObject->getContent($content, $product)) ?>";
-        namerotate = "<?php echo esc_attr($namerotate); ?>",
         link = "";
 			if (isMobile) {
 				link = "https://wa.me/" + noHp[i] + "?text=" + content;
 			} else {
-				link = "https://wa.me/" + noHp[i] + "?text=" + content;
+				link = "https://web.whatsapp.com/send?phone=" + noHp[i] + "&text=" + content;
 			}
 			var n = window.open(link, "_blank");
 			n ? n.focus() : alert("Please allow popups for this website")

@@ -15,8 +15,8 @@ class HwRotator
      * @var string
      */
     public $default = [
-        'content' => 'Hello, Saya mau beli propduk ini {{link}}',
-        'button' => 'Chat via WhatsApp',
+        'content' => 'Hello Kak, Saya mau order produk {{link}}',
+        'button' => 'Order via WhatsApp',
         'button_class' => 'single_add_to_cart_button button',
         'button_id' => 'whatsapp_button',
         'button_css' => '',

@@ -2,7 +2,7 @@ INSTALLATION
 
 Download
 Upload to Plugin Directory
-Activate 
+Activate
 Go to Woocommerce Menu then click HwRotator
 Input Whatsapp Number
 Save it
