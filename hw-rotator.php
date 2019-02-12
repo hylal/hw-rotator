@@ -1,7 +1,7 @@
 <?php
 /*
  * Plugin Name: HW Rotator
- * Plugin URI: https://www.ob-fit.com
+ * Plugin URI: https://github.com/hylal/hw-rotator
  * Description: WordPress Plugin for whatsapp rotator.
  * Version: 1.0.0
  * Author: Hilaludin Wahid
