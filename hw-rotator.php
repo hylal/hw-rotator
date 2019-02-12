@@ -9,11 +9,12 @@
  * License: GPLv2
  */
 
+// Bismillahirrahmaanirrahim
 if ( ! defined( 'ABSPATH' ) ) {
   die;
 }
 
-// Bismillahirrahmaanirrahim
+// Menambah Fungsi
 
 function hwRotator()
 {
