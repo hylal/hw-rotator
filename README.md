@@ -1,4 +1,5 @@
 === hw-rotator ===
+
 Contributors: Hilaludin Wahid
 
 Tags: woocommerce, whatsapp, whatsapp rotator
