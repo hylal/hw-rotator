@@ -22,7 +22,7 @@ function hwRotator()
 }
 
 register_activation_hook( __FILE__, 'hwRotator');
-// End plugin acticator
+// End plugin diakfivasi
 
 
 // menambah submenu setting to WooCommerce
