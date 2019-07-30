@@ -24,7 +24,7 @@ if (wp_is_mobile() || $hwRotatorObject->getOption('hw_rotator_button_show_deskto
 			if (isMobile) {
 				link = "https://wa.me/" + noHp[i] + "?text=" + content;
 			} else {
-				link = "https://web.whatsapp.com/send?phone=" + noHp[i] + "&text=" + content;
+				link = "https://api.whatsapp.com/send?phone=" + noHp[i] + "&text=" + content;
 			}
 			var n = window.open(link, "_blank");
 			n ? n.focus() : alert("Please allow popups for this website")
