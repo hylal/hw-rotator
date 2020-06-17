@@ -1,6 +1,6 @@
 === Plugin Name ===
-Contributors: hylal
-Donate link: http://wahid.biz/
+Contributors: Hilaludin Wahid
+Donate link: http://www.ob-fit.com
 Tags: woocommerce, whatsapp, whatsapp rotator, products, order, wordpress, woocommerce whatsapp, whatsapp order woocommerce
 Requires at least: 4.6
 Tested up to: 4.7
